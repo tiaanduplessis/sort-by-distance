@@ -1,0 +1,39 @@
+{
+  "name": "sort-by-distance",
+  "version": "1.0.0",
+  "description": "Sort array of points based on how close they are to a givin point",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiaanduplessis/sort-by-distance.git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/sort-by-distance",
+  "bugs": "https://github.com/tiaanduplessis/sort-by-distance/issues",
+  "author": {
+    "name": "Tiaan",
+    "email": "tiaanduplessis@hotmail.com",
+    "url": "tiaanduplessis.co.za"
+  },
+
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npm test -- -w",
+  	"lint": "standard --verbose",
+    "lint:fix": "standard --fix --verbose",
+    "pretest": "npm run lint:fix",
+    "test": "mocha"
+  },
+  "keywords": [
+  "sort",
+  "distance",
+  "point",
+  "sort-by-distance"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "standard": "^8.6.0"
+  }
+}
