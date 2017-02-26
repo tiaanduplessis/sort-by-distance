@@ -41,6 +41,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/sort-by-distance.svg)](https://greenkeeper.io/)
+
 ```sh
 $ npm install --save sort-by-distance
 ```
