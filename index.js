@@ -1,11 +1,9 @@
-'use strict'
-
 function distanceBetweenPoints (p1, p2, name) {
   return Math.abs(Math.sqrt((p1[name.y] - p2[name.y]) * (p1[name.y] - p2[name.y]) + (p1[name.x] - p2[name.x]) * (p1[name.x] - p2[name.x])))
 }
 
 function sortByDistance (origin, points, opts = {}) {
-  if (!origin || !points) {
+  if (!origin || !points || !Array.isArray(points)) {
     return new Error('An origin and array points must be provided')
   }
 

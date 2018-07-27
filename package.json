@@ -10,30 +10,24 @@
   },
   "homepage": "https://github.com/tiaanduplessis/sort-by-distance",
   "bugs": "https://github.com/tiaanduplessis/sort-by-distance/issues",
-  "author": {
-    "name": "Tiaan",
-    "email": "tiaanduplessis@hotmail.com",
-    "url": "tiaanduplessis.co.za"
-  },
-
+  "author": "Tiaan du Plessis",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "npm test -- -w",
-  	"lint": "standard --verbose",
-    "lint:fix": "standard --fix --verbose",
-    "pretest": "npm run lint:fix",
-    "test": "mocha"
+    "lint": "standard --fix",
+    "test": "jest"
   },
   "keywords": [
-  "sort",
-  "distance",
-  "point",
-  "sort-by-distance"
+    "sort",
+    "distance",
+    "point",
+    "sort-by-distance"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0",
-    "standard": "^8.6.0"
+    "jest": "^23.4.1",
+    "standard": "^11.0.1"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
   }
 }

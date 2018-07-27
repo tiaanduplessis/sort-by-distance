@@ -1,51 +1,28 @@
-<h1 align="center">🚶 sort-by-distance</h1>
-<div align="center">
-  <strong>Sort array of points based on how close they are to a givin point</strong>
-</div>
-<br>
-<div align="center">
-    <a href="https://npmjs.org/package/sort-by-distance">
-      <img src="https://img.shields.io/npm/v/sort-by-distance.svg?style=flat-square" alt="NPM version" />
-    </a>
-    <a href="https://npmjs.org/package/sort-by-distance">
-    <img src="https://img.shields.io/npm/dm/sort-by-distance.svg?style=flat-square" alt="Downloads" />
-    </a>
-    <a href="https://github.com/feross/standard">
-      <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square" alt="Standard" />
-    </a>
-    <a href="https://travis-ci.org/tiaanduplessis/sort-by-distance">
-      <img src="https://img.shields.io/travis/tiaanduplessis/sort-by-distance/master.svg?style=flat-square" alt="Travis Build" />
-    </a>
-    <a href="https://github.com/RichardLitt/standard-readme)">
-      <img src="https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square" alt="Standard Readme" />
-    </a>
-    <a href="https://badge.fury.io/gh/tiaanduplessis%2Fsort-by-distance">
-      <img src="https://badge.fury.io/gh/tiaanduplessis%2Fsort-by-distance.svg?style=flat-square" alt="GitHub version" />
-   </a>
-</div>
-<br>
-<div align="center">
-  Built with ❤︎ by <a href="tiaanduplessis.co.za">Tiaan</a> and <a href="https://github.com/tiaanduplessis/sort-by-distance/graphs/contributors">contributors</a>
-</div>
 
-<h2>Table of Contents</h2>
-<details>
-  <summary>Table of Contents</summary>
-  <li><a href="#install">Install</a></li>
-  <li><a href="#usage">Usage</a></li>
-  <li><a href="#api">API</a></li>
-  <li><a href="#contribute">Contribute</a></li>
-  <li><a href="#license">License</a></li>
-</details>
+# sort-by-distance
+[![package version](https://img.shields.io/npm/v/sort-by-distance.svg?style=flat-square)](https://npmjs.org/package/sort-by-distance)
+[![package downloads](https://img.shields.io/npm/dm/sort-by-distance.svg?style=flat-square)](https://npmjs.org/package/sort-by-distance)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![package license](https://img.shields.io/npm/l/sort-by-distance.svg?style=flat-square)](https://npmjs.org/package/sort-by-distance)
+[![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
+> Sort array of points based on how close they are to a givin point
+
+## Table of Contents
+
+- [Install](#install)
+- [Usage](#usage)
+- [API](#api)
+- [Contribute](#contribute)
+- [License](#License)
 
 ## Install
 
-```sh
-$ npm install --save sort-by-distance
-```
+This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com). 
 
 ```sh
+$ npm install sort-by-distance
+$ # OR
 $ yarn add sort-by-distance
 ```
 
@@ -139,10 +116,12 @@ The options available and their defaults:
 
 ## Contribute
 
-Contributions are welcome. Please open up an issue or create PR if you would like to help out.
-
-Note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+1. Fork it and create your feature branch: git checkout -b my-new-feature
+2. Commit your changes: git commit -am 'Add some feature'
+3. Push to the branch: git push origin my-new-feature 
+4. Submit a pull request
 
 ## License
 
-Licensed under the MIT License.
+MIT
+    

@@ -1,12 +1,8 @@
-/* eslint-env mocha */
-'use strict'
-
-const assert = require('chai').assert
 const sortByDistance = require('./index')
 
 describe('sort by distance', () => {
   it('should be a function', () => {
-    assert.typeOf(sortByDistance, 'function')
+    expect(typeof sortByDistance).toBe('function')
   })
 
   it('should return the sorted array', () => {
@@ -20,7 +16,6 @@ describe('sort by distance', () => {
 
     const origin = {x: 50, y: 50}
     const nearest = {x: 80, y: 34, distance: 34}
-
-    assert.deepEqual(sortByDistance(origin, points)[0], nearest)
+    expect(sortByDistance(origin, points)[0]).toEqual(nearest)
   })
 })

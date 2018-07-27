@@ -1,4 +1,4 @@
-const sortByDistance = require('./index')
+const sortByDistance = require('sort-by-distance')
 
 const points = [
   {longitude: 3, latitude: 5},
