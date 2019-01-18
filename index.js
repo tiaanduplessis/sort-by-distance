@@ -1,5 +1,15 @@
+const get = require('lodash.get');
+
 function distanceBetweenPoints (p1, p2, name) {
-  return Math.abs(Math.sqrt((p1[name.y] - p2[name.y]) * (p1[name.y] - p2[name.y]) + (p1[name.x] - p2[name.x]) * (p1[name.x] - p2[name.x])))
+  return Math.abs(Math.sqrt(getDistanceY(p1, p2, name) + getDistanceX(p1, p2, name)))
+}
+
+function getDistanceY(p1, p2, name) {
+	return (get(p1, name.y) - get(p2, name.y)) * (get(p1, name.y) - get(p2, name.y));
+}
+
+function getDistanceX(p1, p2, name) {
+	return (get(p1, name.x) - get(p2, name.x)) * (get(p1, name.x) - get(p2, name.x));
 }
 
 function sortByDistance (origin, points, opts = {}) {
@@ -12,7 +22,7 @@ function sortByDistance (origin, points, opts = {}) {
     x: opts.xName || 'x'
   }
 
-  const newPoints = JSON.parse(JSON.stringify(points))
+  const newPoints = points.slice();
 
   newPoints.sort(function (a, b) {
     a.distance = distanceBetweenPoints(origin, a, names)
