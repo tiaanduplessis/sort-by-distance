@@ -15,8 +15,8 @@ function distanceBetweenPoints (p1, p2, name, spheric = false) {
 
 function distanceBetweenPointsSpheric(lat1, lng1, lat2, lng2, miles = true) { // miles optional
   if (typeof miles === "undefined"){miles=false;}
-  function deg2rad(deg: number){return deg * (Math.PI/180);}
-  function square(x: number){return Math.pow(x, 2);}
+  function deg2rad(deg){return deg * (Math.PI/180);}
+  function square(x){return Math.pow(x, 2);}
   var r=6371; // radius of the earth in km
   lat1=deg2rad(lat1);
   lat2=deg2rad(lat2);
