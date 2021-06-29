@@ -3,17 +3,17 @@ const get = require('lodash.get')
 function distanceBetweenPoints (p1, p2, name, spheric = false) {
 	if(spheric) {
 		return distanceBetweenPointsSpheric(
-			get(p1, name.y),
 			get(p1, name.x),
-			get(p2, name.y),
+			get(p1, name.y),
 			get(p2, name.x),
+			get(p2, name.y),
 			false
 		)
 	}
   return Math.abs(Math.sqrt(getDistanceY(p1, p2, name) + getDistanceX(p1, p2, name)))
 }
 
-function distanceBetweenPointsSpheric(lat1: number, lng1: number, lat2: number, lng2: number, miles = true) { // miles optional
+function distanceBetweenPointsSpheric(lat1, lng1, lat2, lng2, miles = true) { // miles optional
   if (typeof miles === "undefined"){miles=false;}
   function deg2rad(deg: number){return deg * (Math.PI/180);}
   function square(x: number){return Math.pow(x, 2);}
