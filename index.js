@@ -2,10 +2,10 @@ const get = require('lodash.get')
 
 function distanceBetweenPoints (p1, p2, name, spheric = false) {
 	if(spheric) {
-		distanceBetweenPointsSpheric(
+		return distanceBetweenPointsSpheric(
 			get(p1, name.y),
 			get(p1, name.x),
-			get(p2, name.y)
+			get(p2, name.y),
 			get(p2, name.x),
 			false
 		)
