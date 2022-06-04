@@ -1,6 +1,6 @@
 {
   "name": "sort-by-distance",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Sort array of points based on how close they are to a givin point",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
