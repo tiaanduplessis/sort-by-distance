@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"target": "es2018",
+		"module": "esnext",
+		"lib": ["esnext"],
+		"strict": true,
+		"strictNullChecks": true,
+		"allowSyntheticDefaultImports": true
+	}
+}

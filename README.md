@@ -6,24 +6,38 @@
 [![package license](https://img.shields.io/npm/l/sort-by-distance.svg?style=flat-square)](https://npmjs.org/package/sort-by-distance)
 [![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-> Sort array of points based on how close they are to a givin point
+Sort array of points based on how close they are to a givin point
 
 ## Table of Contents
 
-- [Install](#install)
-- [Usage](#usage)
-- [API](#api)
-- [Contribute](#contribute)
-- [License](#License)
+- [sort-by-distance](#sort-by-distance)
+	- [Table of Contents](#table-of-contents)
+	- [Install](#install)
+	- [Usage](#usage)
+	- [API](#api)
+		- [originPoint](#originpoint)
+		- [arrayOfPoints](#arrayofpoints)
+		- [options](#options)
+	- [Contributing](#contributing)
+	- [License](#license)
 
 ## Install
 
-This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com). 
+Install the package locally within you project folder with your package manager:
 
+With `npm`:
 ```sh
-$ npm install sort-by-distance
-$ # OR
-$ yarn add sort-by-distance
+npm install sort-by-distance
+```
+
+With `yarn`:
+```sh
+yarn add sort-by-distance
+```
+
+With `pnpm`:
+```sh
+pnpm add sort-by-distance
 ```
 
 ## Usage
@@ -31,7 +45,7 @@ $ yarn add sort-by-distance
 Call the function providing the `origin` point and an array of other points as arguments:
 
 ```js
-const sortByDistance = require('sort-by-distance')
+import { sortByDistance } from 'sort-by-distance'
 
 const points = [
 	{ x: 3, y: 5},
@@ -57,7 +71,7 @@ You can also change the name of the `x` and `y`:
 
 
 ```js
-const sortByDistance = require('sort-by-distance')
+import { sortByDistance } from 'sort-by-distance'
 
 const points = [
 	{ longitude: 3, latitude: 5},
@@ -110,18 +124,18 @@ The options available and their defaults:
 {
 	yName: 'y', // Name of the y property to look for on the object
 	xName: 'x' // Name of the x property to look for on the object
+	type: 'linear' // "linear" or "haversine";
 }
 
 ```
 
-## Contribute
+For all configuration options, please see the [API docs](https://paka.dev/npm/sort-by-distance).
 
-1. Fork it and create your feature branch: git checkout -b my-new-feature
-2. Commit your changes: git commit -am 'Add some feature'
-3. Push to the branch: git push origin my-new-feature 
-4. Submit a pull request
+## Contributing
+
+Got an idea for a new feature? Found a bug? Contributions are welcome! Please [open up an issue](https://github.com/tiaanduplessis/sort-by-distance/issues) or [make a pull request](https://makeapullrequest.com/).
 
 ## License
 
-MIT
+[MIT © Tiaan du Plessis](./LICENSE)
     
